@@ -10,7 +10,7 @@ services:
       context: ./back-end
       dockerfile: Dockerfile
     # Specify the image name for the built back-end service
-    image: softy-pinko-back-end:task5
+    image: softy-pinko-back-end:task6
     # Map port 5252 on the host to port 5252 on the back-end container
     ports:
       - 5252:5252
@@ -22,7 +22,7 @@ services:
       context: ./front-end
       dockerfile: Dockerfile
     # Specify the image name for the built front-end service
-    image: softy-pinko-front-end:task5
+    image: softy-pinko-front-end:task6
     # Map port 9000 on the host to port 9000 on the front-end container
     ports:
       - 9000:9000
@@ -37,7 +37,7 @@ services:
       context: ./proxy
       dockerfile: Dockerfile
     # Specify the image name for the built proxy service
-    image: softy-pinko-proxy:task5
+    image: softy-pinko-proxy:task6
     # Map port 80 on the host to port 80 on the proxy container
     ports:
       - 80:80
